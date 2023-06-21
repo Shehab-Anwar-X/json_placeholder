@@ -1,9 +1,15 @@
 import 'dart:convert';
 
+/// Importing the photo model keys
 import 'models_keys/photo.dart';
+
+/// Importing the photo entity package from the domain layer.
 import '../../domain/entities/photo.dart';
 
+/// This class extends the Photo entity from the domain layer and adds additional methods to serialize and deserialize JSON
+/// data for persistence.
 class PhotoSerializable extends Photo {
+  /// Constructor for the PhotoSerializable class.
   const PhotoSerializable({
     required super.albumId,
     required super.id,
@@ -12,6 +18,7 @@ class PhotoSerializable extends Photo {
     required super.thumbnailUrl,
   });
 
+  /// Method that returns a new instance of the PhotoSerializable class with the specified properties if they are not null.
   PhotoSerializable copyWith({
     int? albumId,
     int? id,
@@ -28,16 +35,19 @@ class PhotoSerializable extends Photo {
     );
   }
 
+  /// A factory method that parses a JSON string and returns a new instance of the PhotoSerializable class.
   factory PhotoSerializable.fromJson(String str) {
     return PhotoSerializable.fromMap(
       Map<String, dynamic>.from(json.decode(str) as Map),
     );
   }
 
+  /// Converts this object to a JSON string.
   String toJson() {
     return json.encode(toMap());
   }
 
+  /// A factory method that takes a map of JSON data and returns a new instance of the PhotoSerializable class.
   factory PhotoSerializable.fromMap(Map<String, dynamic> json) {
     return PhotoSerializable(
       albumId: json[PhotoKeys.albumId] as int,
@@ -48,6 +58,7 @@ class PhotoSerializable extends Photo {
     );
   }
 
+  /// Method that converts this object into a map of JSON data.
   Map<String, dynamic> toMap() {
     return <String, dynamic>{
       PhotoKeys.albumId: albumId,
@@ -59,9 +70,13 @@ class PhotoSerializable extends Photo {
   }
 }
 
+/// This abstract class provides methods to convert a Photo entity from the domain layer
+/// to a PhotoSerializable object with properties that can be serialized to JSON.
 abstract class PhotoAdapter {
   const PhotoAdapter();
 
+  /// A method that takes a Photo object and returns a corresponding instance of the PhotoSerializable class.
+  /// This method is used to serialize a Photo entity before it is stored in the database.
   static PhotoSerializable serializableModelFromPhoto({
     required Photo model,
   }) {
