@@ -1,8 +1,15 @@
+/// A data source for handling album operations remotely.
+///
+/// Extends [AlbumBaseDataSource].
 import 'base/base_data_source.dart';
 import '../../domain/entities/album_creation_data.dart';
 
 class AlbumRemoteDataSource extends AlbumBaseDataSource {
+  /// The constructor method for creating a new [AlbumRemoteDataSource] instance.
+  ///
+  /// Calls the constructor method of [AlbumBaseDataSource] using the `super` keyword.
   const AlbumRemoteDataSource() : super();
+
   @override
   Future<int> create({
     required AlbumCreationData creationData,
