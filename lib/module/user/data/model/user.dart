@@ -1,3 +1,7 @@
+/// This file contains the definition of the class `UserSerializable` and the abstract class `UserAdapter`.
+/// The `UserSerializable` class extends the `User` entity and is responsible for serializing/deserializing the `User` entity
+/// to/from JSON. The `UserAdapter` class defines a static method that returns an instance of `UserSerializable` from an instance of `User`.
+
 import 'dart:convert';
 
 import 'models_keys/user.dart';
@@ -7,6 +11,7 @@ import '../../domain/entities/user_company.dart';
 import 'user_address.dart';
 import 'user_company.dart';
 
+/// This class extends the `User` entity and is responsible for serializing/deserializing the `User` entity to/from JSON.
 class UserSerializable extends User {
   const UserSerializable({
     required super.id,
@@ -19,6 +24,7 @@ class UserSerializable extends User {
     required super.company,
   });
 
+  /// Returns a new instance of `UserSerializable` with updated values.
   UserSerializable copyWith({
     int? id,
     String? name,
@@ -41,16 +47,19 @@ class UserSerializable extends User {
     );
   }
 
+  /// Returns a new instance of `UserSerializable` from a JSON string.
   factory UserSerializable.fromJson(String str) {
     return UserSerializable.fromMap(
       Map<String, dynamic>.from(json.decode(str) as Map),
     );
   }
 
+  /// Returns a JSON string representation of the object.
   String toJson() {
     return json.encode(toMap());
   }
 
+  /// Returns a new instance of `UserSerializable` from a JSON map.
   factory UserSerializable.fromMap(Map<String, dynamic> json) {
     return UserSerializable(
       id: json[UserKeys.id] as int,
@@ -68,17 +77,24 @@ class UserSerializable extends User {
     );
   }
 
+  /// Returns a JSON map representation of the object.
   Map<String, dynamic> toMap() {
     return <String, dynamic>{
       UserKeys.id: id,
       UserKeys.name: name,
       UserKeys.username: username,
       UserKeys.email: email,
+      
+      /// Serializes the `UserAddress` object into a JSON map and inserts it into
+      /// the `UserSerializable` object map.
       UserKeys.address: UserAddressAdapter.serializableModelFromUserAddress(
         model: address,
       ).toMap(),
       UserKeys.phone: phone,
       UserKeys.website: website,
+      
+      /// Serializes the `UserCompany` object into a JSON map and inserts it into
+      /// the `UserSerializable` object map.
       UserKeys.company: UserCompanyAdapter.serializableModelFromUserCompany(
         model: company,
       ).toMap(),
@@ -86,6 +102,8 @@ class UserSerializable extends User {
   }
 }
 
+/// This abstract class defines a static method that returns an instance of `UserSerializable`
+/// from an instance of `User`.
 abstract class UserAdapter {
   const UserAdapter();
 
