@@ -23,18 +23,18 @@ class User extends Equatable {
     required this.website,
     required this.company,
   });
-  
+
   @override
   List<Object?> get props {
     return [
       id,
-    	name,
-    	username,
-    	email,
-    	address,
-    	phone,
-    	website,
-    	company,
+      name,
+      username,
+      email,
+      address,
+      phone,
+      website,
+      company,
     ];
   }
 }

@@ -14,15 +14,15 @@ class Comment extends Equatable {
     required this.email,
     required this.body,
   });
-  
+
   @override
   List<Object?> get props {
     return [
       postId,
-    	id,
-    	name,
-    	email,
-    	body,
+      id,
+      name,
+      email,
+      body,
     ];
   }
 }

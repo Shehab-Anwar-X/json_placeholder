@@ -8,7 +8,7 @@ class UserAddressGeoSerializable extends UserAddressGeo {
     required super.lat,
     required super.lng,
   });
-  
+
   UserAddressGeoSerializable copyWith({
     String? lat,
     String? lng,

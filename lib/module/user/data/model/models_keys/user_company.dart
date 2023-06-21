@@ -1,6 +1,6 @@
 abstract class UserCompanyKeys {
   const UserCompanyKeys();
-  
+
   static const name = 'name';
   static const catchPhrase = 'catch_phrase';
   static const bs = 'bs';

@@ -11,7 +11,7 @@ class CommentSerializable extends Comment {
     required super.email,
     required super.body,
   });
-  
+
   CommentSerializable copyWith({
     int? postId,
     int? id,

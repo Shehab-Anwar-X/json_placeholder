@@ -1,6 +1,6 @@
 abstract class PhotoKeys {
   const PhotoKeys();
-  
+
   static const albumId = 'album_id';
   static const id = 'id';
   static const title = 'title';

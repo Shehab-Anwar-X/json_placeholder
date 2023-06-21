@@ -10,7 +10,7 @@ class TodoSerializable extends Todo {
     required super.title,
     required super.completed,
   });
-  
+
   TodoSerializable copyWith({
     int? userId,
     int? id,

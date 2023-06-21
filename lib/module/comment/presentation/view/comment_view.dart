@@ -4,7 +4,7 @@ import '../view_model/comment/base_comment/i_comment_view_model.dart';
 class CommentView extends StatelessWidget {
   final ICommentViewModel viewModel;
 
-  const CommentView({required this.viewModel,super.key});
+  const CommentView({required this.viewModel, super.key});
 
   static const String routeName = '/Comment';
 

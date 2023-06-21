@@ -9,7 +9,7 @@ class UserCompanySerializable extends UserCompany {
     required super.catchPhrase,
     required super.bs,
   });
-  
+
   UserCompanySerializable copyWith({
     String? name,
     String? catchPhrase,

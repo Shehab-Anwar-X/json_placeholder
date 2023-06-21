@@ -1,6 +1,6 @@
 abstract class PhotoCreationDataKeys {
   const PhotoCreationDataKeys();
-  
+
   static const albumId = 'album_id';
   static const title = 'title';
   static const url = 'url';

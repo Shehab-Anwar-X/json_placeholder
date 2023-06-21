@@ -10,13 +10,13 @@ class TodoCreationData extends Equatable {
     required this.title,
     required this.completed,
   });
-  
+
   @override
   List<Object?> get props {
     return [
       userId,
-    	title,
-    	completed,
+      title,
+      completed,
     ];
   }
 }

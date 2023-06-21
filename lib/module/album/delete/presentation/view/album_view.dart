@@ -4,7 +4,7 @@ import '../view_model/album/base_album/i_album_view_model.dart';
 class AlbumView extends StatelessWidget {
   final IAlbumViewModel viewModel;
 
-  const AlbumView({required this.viewModel,super.key});
+  const AlbumView({required this.viewModel, super.key});
 
   static const String routeName = '/Album';
 

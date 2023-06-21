@@ -4,7 +4,7 @@ import '../view_model/update_album/base_update_album/i_update_album_view_model.d
 class UpdateAlbumView extends StatelessWidget {
   final IUpdateAlbumViewModel viewModel;
 
-  const UpdateAlbumView({required this.viewModel,super.key});
+  const UpdateAlbumView({required this.viewModel, super.key});
 
   static const String routeName = '/UpdateAlbum';
 

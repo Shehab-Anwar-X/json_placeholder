@@ -1,4 +1,4 @@
-  import '../entities/user_creation_data.dart';
+import '../entities/user_creation_data.dart';
 import '../entities/user.dart';
 
 abstract class BaseUserRepository {
@@ -13,5 +13,4 @@ abstract class BaseUserRepository {
   Future<User?> read({required int id});
 
   Future<void> update({required int id, required UserCreationData newData});
-
 }

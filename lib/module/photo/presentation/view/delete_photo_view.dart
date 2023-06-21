@@ -4,7 +4,7 @@ import '../view_model/delete_photo/base_delete_photo/i_delete_photo_view_model.d
 class DeletePhotoView extends StatelessWidget {
   final IDeletePhotoViewModel viewModel;
 
-  const DeletePhotoView({required this.viewModel,super.key});
+  const DeletePhotoView({required this.viewModel, super.key});
 
   static const String routeName = '/DeletePhoto';
 

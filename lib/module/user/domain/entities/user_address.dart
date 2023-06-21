@@ -16,15 +16,15 @@ class UserAddress extends Equatable {
     required this.zipcode,
     required this.geo,
   });
-  
+
   @override
   List<Object?> get props {
     return [
       street,
-    	suite,
-    	city,
-    	zipcode,
-    	geo,
+      suite,
+      city,
+      zipcode,
+      geo,
     ];
   }
 }

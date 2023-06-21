@@ -1,6 +1,6 @@
 abstract class UserAddressGeoKeys {
   const UserAddressGeoKeys();
-  
+
   static const lat = 'lat';
   static const lng = 'lng';
 

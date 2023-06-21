@@ -10,7 +10,7 @@ class CommentCreationDataSerializable extends CommentCreationData {
     required super.email,
     required super.body,
   });
-  
+
   CommentCreationDataSerializable copyWith({
     int? postId,
     String? name,
@@ -57,7 +57,8 @@ class CommentCreationDataSerializable extends CommentCreationData {
 abstract class CommentCreationDataAdapter {
   const CommentCreationDataAdapter();
 
-  static CommentCreationDataSerializable serializableModelFromCommentCreationData({
+  static CommentCreationDataSerializable
+      serializableModelFromCommentCreationData({
     required CommentCreationData model,
   }) {
     return CommentCreationDataSerializable(

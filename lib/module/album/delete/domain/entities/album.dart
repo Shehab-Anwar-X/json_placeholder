@@ -10,13 +10,13 @@ class Album extends Equatable {
     required this.id,
     required this.title,
   });
-  
+
   @override
   List<Object?> get props {
     return [
       userId,
-    	id,
-    	title,
+      id,
+      title,
     ];
   }
 }

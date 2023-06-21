@@ -21,17 +21,17 @@ class UserCreationData extends Equatable {
     required this.website,
     required this.company,
   });
-  
+
   @override
   List<Object?> get props {
     return [
       name,
-    	username,
-    	email,
-    	address,
-    	phone,
-    	website,
-    	company,
+      username,
+      email,
+      address,
+      phone,
+      website,
+      company,
     ];
   }
 }

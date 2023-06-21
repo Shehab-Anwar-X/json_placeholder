@@ -1,6 +1,6 @@
 abstract class AlbumCreationDataKeys {
   const AlbumCreationDataKeys();
-  
+
   static const userId = 'user_id';
   static const title = 'title';
 

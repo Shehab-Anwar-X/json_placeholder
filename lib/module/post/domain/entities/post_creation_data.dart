@@ -10,13 +10,13 @@ class PostCreationData extends Equatable {
     required this.title,
     required this.body,
   });
-  
+
   @override
   List<Object?> get props {
     return [
       userId,
-    	title,
-    	body,
+      title,
+      body,
     ];
   }
 }

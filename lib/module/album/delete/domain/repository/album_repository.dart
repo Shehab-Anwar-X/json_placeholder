@@ -1,4 +1,4 @@
-  import '../entities/album_creation_data.dart';
+import '../entities/album_creation_data.dart';
 import '../entities/album.dart';
 
 abstract class BaseAlbumRepository {
@@ -8,10 +8,10 @@ abstract class BaseAlbumRepository {
 
   Future<void> delete({required int id});
 
-  Future<List<Album>> list({required int limit, required int offset, int? userId});
+  Future<List<Album>> list(
+      {required int limit, required int offset, int? userId});
 
   Future<Album?> read({required int id});
 
   Future<void> update({required int id, required AlbumCreationData newData});
-
 }

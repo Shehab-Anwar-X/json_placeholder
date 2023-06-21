@@ -14,15 +14,15 @@ class Photo extends Equatable {
     required this.url,
     required this.thumbnailUrl,
   });
-  
+
   @override
   List<Object?> get props {
     return [
       albumId,
-    	id,
-    	title,
-    	url,
-    	thumbnailUrl,
+      id,
+      title,
+      url,
+      thumbnailUrl,
     ];
   }
 }

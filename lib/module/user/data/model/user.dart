@@ -18,7 +18,7 @@ class UserSerializable extends User {
     required super.website,
     required super.company,
   });
-  
+
   UserSerializable copyWith({
     int? id,
     String? name,

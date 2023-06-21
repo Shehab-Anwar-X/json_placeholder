@@ -1,6 +1,6 @@
 abstract class UserKeys {
   const UserKeys();
-  
+
   static const id = 'id';
   static const name = 'name';
   static const username = 'username';

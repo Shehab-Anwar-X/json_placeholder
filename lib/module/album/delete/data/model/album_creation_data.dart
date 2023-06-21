@@ -8,7 +8,7 @@ class AlbumCreationDataSerializable extends AlbumCreationData {
     required super.userId,
     required super.title,
   });
-  
+
   AlbumCreationDataSerializable copyWith({
     int? userId,
     String? title,

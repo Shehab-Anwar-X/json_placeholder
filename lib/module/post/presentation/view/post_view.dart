@@ -4,7 +4,7 @@ import '../view_model/post/base_post/i_post_view_model.dart';
 class PostView extends StatelessWidget {
   final IPostViewModel viewModel;
 
-  const PostView({required this.viewModel,super.key});
+  const PostView({required this.viewModel, super.key});
 
   static const String routeName = '/Post';
 

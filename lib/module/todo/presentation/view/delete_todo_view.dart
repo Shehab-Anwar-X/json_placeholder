@@ -4,7 +4,7 @@ import '../view_model/delete_todo/base_delete_todo/i_delete_todo_view_model.dart
 class DeleteTodoView extends StatelessWidget {
   final IDeleteTodoViewModel viewModel;
 
-  const DeleteTodoView({required this.viewModel,super.key});
+  const DeleteTodoView({required this.viewModel, super.key});
 
   static const String routeName = '/DeleteTodo';
 

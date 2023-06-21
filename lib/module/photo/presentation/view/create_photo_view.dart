@@ -4,7 +4,7 @@ import '../view_model/create_photo/base_create_photo/i_create_photo_view_model.d
 class CreatePhotoView extends StatelessWidget {
   final ICreatePhotoViewModel viewModel;
 
-  const CreatePhotoView({required this.viewModel,super.key});
+  const CreatePhotoView({required this.viewModel, super.key});
 
   static const String routeName = '/CreatePhoto';
 

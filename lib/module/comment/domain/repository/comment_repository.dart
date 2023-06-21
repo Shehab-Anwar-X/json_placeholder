@@ -1,4 +1,4 @@
-  import '../entities/comment_creation_data.dart';
+import '../entities/comment_creation_data.dart';
 import '../entities/comment.dart';
 
 abstract class BaseCommentRepository {
@@ -8,10 +8,10 @@ abstract class BaseCommentRepository {
 
   Future<void> delete({required int id});
 
-  Future<List<Comment>> list({required int limit, required int offset, int? postId});
+  Future<List<Comment>> list(
+      {required int limit, required int offset, int? postId});
 
   Future<Comment?> read({required int id});
 
   Future<void> update({required int id, required CommentCreationData newData});
-
 }

@@ -9,7 +9,7 @@ class PostCreationDataSerializable extends PostCreationData {
     required super.title,
     required super.body,
   });
-  
+
   PostCreationDataSerializable copyWith({
     int? userId,
     String? title,

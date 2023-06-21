@@ -12,14 +12,14 @@ class PhotoCreationData extends Equatable {
     required this.url,
     required this.thumbnailUrl,
   });
-  
+
   @override
   List<Object?> get props {
     return [
       albumId,
-    	title,
-    	url,
-    	thumbnailUrl,
+      title,
+      url,
+      thumbnailUrl,
     ];
   }
 }

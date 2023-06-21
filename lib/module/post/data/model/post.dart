@@ -10,7 +10,7 @@ class PostSerializable extends Post {
     required super.title,
     required super.body,
   });
-  
+
   PostSerializable copyWith({
     int? userId,
     int? id,

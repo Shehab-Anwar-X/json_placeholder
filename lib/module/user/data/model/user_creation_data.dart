@@ -17,7 +17,7 @@ class UserCreationDataSerializable extends UserCreationData {
     required super.website,
     required super.company,
   });
-  
+
   UserCreationDataSerializable copyWith({
     String? name,
     String? username,
@@ -69,12 +69,14 @@ class UserCreationDataSerializable extends UserCreationData {
       UserCreationDataKeys.name: name,
       UserCreationDataKeys.username: username,
       UserCreationDataKeys.email: email,
-      UserCreationDataKeys.address: UserAddressAdapter.serializableModelFromUserAddress(
+      UserCreationDataKeys.address:
+          UserAddressAdapter.serializableModelFromUserAddress(
         model: address,
       ).toMap(),
       UserCreationDataKeys.phone: phone,
       UserCreationDataKeys.website: website,
-      UserCreationDataKeys.company: UserCompanyAdapter.serializableModelFromUserCompany(
+      UserCreationDataKeys.company:
+          UserCompanyAdapter.serializableModelFromUserCompany(
         model: company,
       ).toMap(),
     };

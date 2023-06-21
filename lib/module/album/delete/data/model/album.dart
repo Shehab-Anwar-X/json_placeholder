@@ -9,7 +9,7 @@ class AlbumSerializable extends Album {
     required super.id,
     required super.title,
   });
-  
+
   AlbumSerializable copyWith({
     int? userId,
     int? id,

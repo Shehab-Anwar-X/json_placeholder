@@ -10,7 +10,7 @@ class PhotoCreationDataSerializable extends PhotoCreationData {
     required super.url,
     required super.thumbnailUrl,
   });
-  
+
   PhotoCreationDataSerializable copyWith({
     int? albumId,
     String? title,

@@ -12,14 +12,14 @@ class Todo extends Equatable {
     required this.title,
     required this.completed,
   });
-  
+
   @override
   List<Object?> get props {
     return [
       userId,
-    	id,
-    	title,
-    	completed,
+      id,
+      title,
+      completed,
     ];
   }
 }

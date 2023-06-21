@@ -8,12 +8,12 @@ class UserAddressGeo extends Equatable {
     required this.lat,
     required this.lng,
   });
-  
+
   @override
   List<Object?> get props {
     return [
       lat,
-    	lng,
+      lng,
     ];
   }
 }

@@ -1,6 +1,6 @@
 abstract class UserAddressKeys {
   const UserAddressKeys();
-  
+
   static const street = 'street';
   static const suite = 'suite';
   static const city = 'city';

@@ -4,7 +4,7 @@ import '../view_model/delete_comment/base_delete_comment/i_delete_comment_view_m
 class DeleteCommentView extends StatelessWidget {
   final IDeleteCommentViewModel viewModel;
 
-  const DeleteCommentView({required this.viewModel,super.key});
+  const DeleteCommentView({required this.viewModel, super.key});
 
   static const String routeName = '/DeleteComment';
 

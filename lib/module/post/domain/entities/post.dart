@@ -12,14 +12,14 @@ class Post extends Equatable {
     required this.title,
     required this.body,
   });
-  
+
   @override
   List<Object?> get props {
     return [
       userId,
-    	id,
-    	title,
-    	body,
+      id,
+      title,
+      body,
     ];
   }
 }

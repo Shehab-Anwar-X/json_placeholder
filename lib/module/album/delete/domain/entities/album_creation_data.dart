@@ -8,12 +8,12 @@ class AlbumCreationData extends Equatable {
     required this.userId,
     required this.title,
   });
-  
+
   @override
   List<Object?> get props {
     return [
       userId,
-    	title,
+      title,
     ];
   }
 }

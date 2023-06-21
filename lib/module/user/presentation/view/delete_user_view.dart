@@ -4,7 +4,7 @@ import '../view_model/delete_user/base_delete_user/i_delete_user_view_model.dart
 class DeleteUserView extends StatelessWidget {
   final IDeleteUserViewModel viewModel;
 
-  const DeleteUserView({required this.viewModel,super.key});
+  const DeleteUserView({required this.viewModel, super.key});
 
   static const String routeName = '/DeleteUser';
 

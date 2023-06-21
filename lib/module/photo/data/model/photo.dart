@@ -11,7 +11,7 @@ class PhotoSerializable extends Photo {
     required super.url,
     required super.thumbnailUrl,
   });
-  
+
   PhotoSerializable copyWith({
     int? albumId,
     int? id,

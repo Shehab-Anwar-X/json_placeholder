@@ -10,13 +10,13 @@ class UserCompany extends Equatable {
     required this.catchPhrase,
     required this.bs,
   });
-  
+
   @override
   List<Object?> get props {
     return [
       name,
-    	catchPhrase,
-    	bs,
+      catchPhrase,
+      bs,
     ];
   }
 }

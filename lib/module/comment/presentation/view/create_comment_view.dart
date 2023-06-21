@@ -4,7 +4,7 @@ import '../view_model/create_comment/base_create_comment/i_create_comment_view_m
 class CreateCommentView extends StatelessWidget {
   final ICreateCommentViewModel viewModel;
 
-  const CreateCommentView({required this.viewModel,super.key});
+  const CreateCommentView({required this.viewModel, super.key});
 
   static const String routeName = '/CreateComment';
 

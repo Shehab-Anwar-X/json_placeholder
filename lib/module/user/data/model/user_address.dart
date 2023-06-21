@@ -13,7 +13,7 @@ class UserAddressSerializable extends UserAddress {
     required super.zipcode,
     required super.geo,
   });
-  
+
   UserAddressSerializable copyWith({
     String? street,
     String? suite,
@@ -58,7 +58,8 @@ class UserAddressSerializable extends UserAddress {
       UserAddressKeys.suite: suite,
       UserAddressKeys.city: city,
       UserAddressKeys.zipcode: zipcode,
-      UserAddressKeys.geo: UserAddressGeoAdapter.serializableModelFromUserAddressGeo(
+      UserAddressKeys.geo:
+          UserAddressGeoAdapter.serializableModelFromUserAddressGeo(
         model: geo,
       ).toMap(),
     };

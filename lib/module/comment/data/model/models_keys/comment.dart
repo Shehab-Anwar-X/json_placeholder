@@ -1,6 +1,6 @@
 abstract class CommentKeys {
   const CommentKeys();
-  
+
   static const postId = 'post_id';
   static const id = 'id';
   static const name = 'name';

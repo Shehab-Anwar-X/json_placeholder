@@ -4,7 +4,7 @@ import '../view_model/delete_album/base_delete_album/i_delete_album_view_model.d
 class DeleteAlbumView extends StatelessWidget {
   final IDeleteAlbumViewModel viewModel;
 
-  const DeleteAlbumView({required this.viewModel,super.key});
+  const DeleteAlbumView({required this.viewModel, super.key});
 
   static const String routeName = '/DeleteAlbum';
 

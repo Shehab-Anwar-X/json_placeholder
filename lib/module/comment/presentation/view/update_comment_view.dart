@@ -4,7 +4,7 @@ import '../view_model/update_comment/base_update_comment/i_update_comment_view_m
 class UpdateCommentView extends StatelessWidget {
   final IUpdateCommentViewModel viewModel;
 
-  const UpdateCommentView({required this.viewModel,super.key});
+  const UpdateCommentView({required this.viewModel, super.key});
 
   static const String routeName = '/UpdateComment';
 

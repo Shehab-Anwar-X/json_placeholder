@@ -1,6 +1,6 @@
 abstract class UserCreationDataKeys {
   const UserCreationDataKeys();
-  
+
   static const name = 'name';
   static const username = 'username';
   static const email = 'email';

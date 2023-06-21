@@ -12,14 +12,14 @@ class CommentCreationData extends Equatable {
     required this.email,
     required this.body,
   });
-  
+
   @override
   List<Object?> get props {
     return [
       postId,
-    	name,
-    	email,
-    	body,
+      name,
+      email,
+      body,
     ];
   }
 }

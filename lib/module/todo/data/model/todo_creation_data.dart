@@ -9,7 +9,7 @@ class TodoCreationDataSerializable extends TodoCreationData {
     required super.title,
     required super.completed,
   });
-  
+
   TodoCreationDataSerializable copyWith({
     int? userId,
     String? title,
