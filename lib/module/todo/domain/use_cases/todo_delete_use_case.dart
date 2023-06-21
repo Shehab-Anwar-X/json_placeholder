@@ -7,7 +7,7 @@ import '../repository/todo_repository.dart';
 /// The TodoDeleteUseCase class is responsible for deleting a todo item from the repository.
 ///
 /// To delete a todo item, call `call()` method with the id of the todo item that needs to be deleted.
-/// 
+///
 /// Example:
 /// ```dart
 ///   final todoDeleteUseCase = TodoDeleteUseCase(repository: todoRepository);

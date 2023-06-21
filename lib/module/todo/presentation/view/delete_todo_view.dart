@@ -4,9 +4,9 @@
 /// that displays the name of the view.
 ///
 /// The view expects an instance of [IDeleteTodoViewModel] in its constructor, which is used to handle the deletion process on the backend.
-/// 
+///
 /// Example usage:
-/// 
+///
 /// ```
 /// final viewModel = new DeleteTodoViewModel();
 /// return DeleteTodoView(viewModel: viewModel);

@@ -11,7 +11,7 @@ import 'package:equatable/equatable.dart';
 class UserAddressGeo extends Equatable {
   /// The latitude of the user's address.
   final String lat;
-  
+
   /// The longitude of the user's address.
   final String lng;
 

@@ -84,7 +84,7 @@ class UserSerializable extends User {
       UserKeys.name: name,
       UserKeys.username: username,
       UserKeys.email: email,
-      
+
       /// Serializes the `UserAddress` object into a JSON map and inserts it into
       /// the `UserSerializable` object map.
       UserKeys.address: UserAddressAdapter.serializableModelFromUserAddress(
@@ -92,7 +92,7 @@ class UserSerializable extends User {
       ).toMap(),
       UserKeys.phone: phone,
       UserKeys.website: website,
-      
+
       /// Serializes the `UserCompany` object into a JSON map and inserts it into
       /// the `UserSerializable` object map.
       UserKeys.company: UserCompanyAdapter.serializableModelFromUserCompany(

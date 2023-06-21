@@ -6,7 +6,6 @@ import '../entities/todo_creation_data.dart';
 
 /// This is the TodoCreateUseCase class which initiates the process of creating a new todo by calling the create function
 class TodoCreateUseCase {
-
   /// This is a private variable that stores an instance of the TodoRepository class
   final BaseTodoRepository _repository;
 

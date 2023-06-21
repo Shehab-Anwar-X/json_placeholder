@@ -6,7 +6,6 @@ import '../view_model/todo/base_todo/i_todo_view_model.dart';
 
 /// This is the TodoView StatefulWidget which is created using the StatelessWidget class
 class TodoView extends StatelessWidget {
-
   /// This is the required parameter that is used to get the data from the child classes or other functions
   final ITodoViewModel viewModel;
 

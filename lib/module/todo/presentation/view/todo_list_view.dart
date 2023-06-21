@@ -12,7 +12,7 @@ class TodoListView extends StatelessWidget {
   final ITodoListViewModel viewModel;
 
   /// Constructor for the TodoListView widget.
-  /// 
+  ///
   /// [viewModel] is a required parameter containing the view model
   /// responsible for providing data and business logic for the widget.
   const TodoListView({required this.viewModel, super.key});

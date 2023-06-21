@@ -1,4 +1,4 @@
-/// This import statement imports the 'dart:convert' library to convert JSON 
+/// This import statement imports the 'dart:convert' library to convert JSON
 /// encoded strings to and from object representations.
 import 'dart:convert';
 
@@ -7,8 +7,8 @@ import 'dart:convert';
 import 'models_keys/post_creation_data.dart';
 import '../../domain/entities/post_creation_data.dart';
 
-/// This class extends the 'PostCreationData' class defined in 
-/// '../../domain/entities/post_creation_data.dart' and provides a 
+/// This class extends the 'PostCreationData' class defined in
+/// '../../domain/entities/post_creation_data.dart' and provides a
 /// serializable version of it.
 class PostCreationDataSerializable extends PostCreationData {
   /// This constructor creates a new instance of 'PostCreationDataSerializable'
@@ -19,8 +19,8 @@ class PostCreationDataSerializable extends PostCreationData {
     required super.body,
   });
 
-  /// This 'copyWith' method creates a new instance of 
-  /// 'PostCreationDataSerializable' with optional arguments 'userId', 
+  /// This 'copyWith' method creates a new instance of
+  /// 'PostCreationDataSerializable' with optional arguments 'userId',
   /// 'title', and 'body' and returns it.
   PostCreationDataSerializable copyWith({
     int? userId,
@@ -34,7 +34,7 @@ class PostCreationDataSerializable extends PostCreationData {
     );
   }
 
-  /// This 'fromJson' factory method creates a new instance of 
+  /// This 'fromJson' factory method creates a new instance of
   /// 'PostCreationDataSerializable' from a JSON encoded string and returns it.
   factory PostCreationDataSerializable.fromJson(String str) {
     return PostCreationDataSerializable.fromMap(
@@ -42,13 +42,13 @@ class PostCreationDataSerializable extends PostCreationData {
     );
   }
 
-  /// This 'toJson' method encodes the object as a JSON encoded string and 
+  /// This 'toJson' method encodes the object as a JSON encoded string and
   /// returns it.
   String toJson() {
     return json.encode(toMap());
   }
 
-  /// This 'fromMap' factory method creates a new instance of 
+  /// This 'fromMap' factory method creates a new instance of
   /// 'PostCreationDataSerializable' from a map of properties and returns it.
   factory PostCreationDataSerializable.fromMap(Map<String, dynamic> json) {
     return PostCreationDataSerializable(
@@ -68,15 +68,15 @@ class PostCreationDataSerializable extends PostCreationData {
   }
 }
 
-/// This abstract class provides an adapter for creating instances of 
+/// This abstract class provides an adapter for creating instances of
 /// 'PostCreationDataSerializable' for 'PostCreationData'.
 abstract class PostCreationDataAdapter {
   /// This const constructor creates a new instance of
   /// 'PostCreationDataAdapter'.
   const PostCreationDataAdapter();
 
-  /// This 'serializableModelFromPostCreationData' static method creates a new 
-  /// instance of 'PostCreationDataSerializable' from a 'PostCreationData' 
+  /// This 'serializableModelFromPostCreationData' static method creates a new
+  /// instance of 'PostCreationDataSerializable' from a 'PostCreationData'
   /// model and returns it.
   static PostCreationDataSerializable serializableModelFromPostCreationData({
     required PostCreationData model,

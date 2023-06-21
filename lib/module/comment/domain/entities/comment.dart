@@ -31,6 +31,7 @@ class Comment extends Equatable {
   });
 
   @override
+
   /// Returns a list of properties to be used for comparing instances of this class.
   ///
   /// In this case, the properties are:

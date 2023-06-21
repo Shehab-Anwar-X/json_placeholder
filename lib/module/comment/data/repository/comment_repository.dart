@@ -6,7 +6,6 @@ import '../../domain/entities/comment.dart';
 
 /// The implementation of the comment repository
 class CommentRepository extends BaseCommentRepository {
-
   /// The data source used by the comment repository
   final CommentBaseDataSource dataSource;
 
@@ -14,6 +13,7 @@ class CommentRepository extends BaseCommentRepository {
   const CommentRepository(this.dataSource);
 
   @override
+
   /// Implementation of the create() function from BaseCommentRepository interface
   /// Used to create a new comment
   Future<int> create({required CommentCreationData creationData}) async {
@@ -25,6 +25,7 @@ class CommentRepository extends BaseCommentRepository {
   }
 
   @override
+
   /// Implementation of the delete() function from BaseCommentRepository interface
   /// Used to delete a comment with the given id.
   Future<void> delete({required int id}) async {
@@ -36,6 +37,7 @@ class CommentRepository extends BaseCommentRepository {
   }
 
   @override
+
   /// Implementation of the list() function from BaseCommentRepository interface
   /// Used to list comments with the given limit, offset, and postId.
   Future<List<Comment>> list(
@@ -52,6 +54,7 @@ class CommentRepository extends BaseCommentRepository {
   }
 
   @override
+
   /// Implementation of the read() function from BaseCommentRepository interface
   /// Used to read a comment with the given id.
   Future<Comment?> read({required int id}) async {
@@ -63,6 +66,7 @@ class CommentRepository extends BaseCommentRepository {
   }
 
   @override
+
   /// Implementation of the update() function from BaseCommentRepository interface
   /// Used to update a comment with the given id and new data.
   Future<void> update(

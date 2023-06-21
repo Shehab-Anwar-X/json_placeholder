@@ -1,10 +1,10 @@
-///This import statement imports the dart:convert library 
+///This import statement imports the dart:convert library
 import 'dart:convert';
 
-/// This import statement imports the UserCompany class from the "user_company.dart" file located in the models_keys directory 
+/// This import statement imports the UserCompany class from the "user_company.dart" file located in the models_keys directory
 import 'models_keys/user_company.dart';
 
-/// This import statement imports the UserCompany class from the entities directory in the domain package 
+/// This import statement imports the UserCompany class from the entities directory in the domain package
 import '../../domain/entities/user_company.dart';
 
 /// The UserCompanySerializable class extends the UserCompany class using inheritance and makes it serializable

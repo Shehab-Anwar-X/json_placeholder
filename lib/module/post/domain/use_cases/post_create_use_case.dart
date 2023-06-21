@@ -1,5 +1,5 @@
 /// This file contains the implementation of the PostCreateUseCase class
-/// which is responsible for creating a new post using an instance of 
+/// which is responsible for creating a new post using an instance of
 /// BasePostRepository.
 
 import '../repository/post_repository.dart';

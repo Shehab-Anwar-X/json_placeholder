@@ -3,16 +3,15 @@
 import 'package:equatable/equatable.dart';
 
 class Post extends Equatable {
-  
   /// The `userId` property of the `post` object.
   final int userId;
-  
+
   /// The `id` property of the `post` object.
   final int id;
-  
+
   /// The `title` property of the `post` object.
   final String title;
-  
+
   /// The `body` property of the `post` object.
   final String body;
 

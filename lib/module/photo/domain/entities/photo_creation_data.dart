@@ -25,6 +25,7 @@ class PhotoCreationData extends Equatable {
   });
 
   @override
+
   /// Returns a list of properties to be used for equality comparison.
   List<Object?> get props {
     return [

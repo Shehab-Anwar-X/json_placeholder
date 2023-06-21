@@ -2,13 +2,12 @@
 import 'package:equatable/equatable.dart';
 
 class TodoCreationData extends Equatable {
-
   /// The user ID associated with the todo item.
   final int userId;
-  
+
   /// The title of the todo item.
   final String title;
-  
+
   /// Indicates whether or not the todo item is complete.
   final bool completed;
 

@@ -1,6 +1,5 @@
 /// This is an abstract class TodoKeys that declares a constant class object.
 abstract class TodoKeys {
-  
   /// This is the constructor of TodoKeys class.
   const TodoKeys();
 

@@ -48,7 +48,8 @@ class PhotoRepository extends BasePhotoRepository {
   ///
   /// Throws an [Exception] if no photos are found.
   @override
-  Future<List<Photo>> list({required int limit, required int offset, int? albumId}) async {
+  Future<List<Photo>> list(
+      {required int limit, required int offset, int? albumId}) async {
     final result = await dataSource.list(
       limit: limit,
       offset: offset,
@@ -76,7 +77,8 @@ class PhotoRepository extends BasePhotoRepository {
   ///
   /// Throws an [Exception] if the photo does not exist.
   @override
-  Future<void> update({required int id, required PhotoCreationData newData}) async {
+  Future<void> update(
+      {required int id, required PhotoCreationData newData}) async {
     final result = await dataSource.update(
       id: id,
       newData: newData,

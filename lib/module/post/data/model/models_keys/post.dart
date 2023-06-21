@@ -1,6 +1,5 @@
 /// An abstract class that serves as a key holder for posts.
 abstract class PostKeys {
-  
   /// A constant constructor for the [PostKeys] class.
   const PostKeys();
 
@@ -17,7 +16,7 @@ abstract class PostKeys {
   static const body = 'body';
 
   /// A static method that returns a list of all the keys as strings.
-  /// 
+  ///
   /// The list contains the [userId], [id], [title], and [body] keys.
   static List<String> toList() {
     return <String>[

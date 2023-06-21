@@ -3,21 +3,21 @@
 /// The PhotoCreationDataSerializable class extends the abstract class PhotoCreationData,
 /// and is used to create a serializable version of the model.
 ///
-/// The PhotoCreationDataAdapter class provides a static factory method to convert a 
+/// The PhotoCreationDataAdapter class provides a static factory method to convert a
 /// PhotoCreationData object to a PhotoCreationDataSerializable object.
 ///
-/// The serialization and deserialization is done using the dart:convert library. 
+/// The serialization and deserialization is done using the dart:convert library.
 import 'dart:convert';
 
 import 'models_keys/photo_creation_data.dart';
 import '../../domain/entities/photo_creation_data.dart';
 
 /// Represents the serializable version of a [PhotoCreationData] object,
-/// with an additional factory method for creating a [PhotoCreationDataSerializable] 
+/// with an additional factory method for creating a [PhotoCreationDataSerializable]
 /// object from a JSON string.
 class PhotoCreationDataSerializable extends PhotoCreationData {
-  /// Constructs a PhotoCreationDataSerializable object from [albumId], [title], [url], 
-  /// and [thumbnailUrl] properties, which are inherited from the base class.  
+  /// Constructs a PhotoCreationDataSerializable object from [albumId], [title], [url],
+  /// and [thumbnailUrl] properties, which are inherited from the base class.
   const PhotoCreationDataSerializable({
     required super.albumId,
     required super.title,
@@ -25,7 +25,7 @@ class PhotoCreationDataSerializable extends PhotoCreationData {
     required super.thumbnailUrl,
   });
 
-  /// Returns a copy of the [PhotoCreationDataSerializable] object with the provided 
+  /// Returns a copy of the [PhotoCreationDataSerializable] object with the provided
   /// properties copied over. Any property not specified will remain the same.
   PhotoCreationDataSerializable copyWith({
     int? albumId,
@@ -64,7 +64,7 @@ class PhotoCreationDataSerializable extends PhotoCreationData {
     );
   }
 
-  /// Returns a map of the serialized JSON keys and dynamic property values of the 
+  /// Returns a map of the serialized JSON keys and dynamic property values of the
   /// [PhotoCreationDataSerializable] object.
   Map<String, dynamic> toMap() {
     return <String, dynamic>{
